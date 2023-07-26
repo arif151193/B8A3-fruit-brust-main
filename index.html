@@ -20,7 +20,7 @@
 
 </head>
 <body class="lato-font">
-    <header class="mx-10">
+    <header class="mx-auto container">
       <!-- Nav Bar  -->
       <nav class="flex flex-col lg:flex-row items-center justify-around my-10 bg-[#F85559] rounded-full px-8 py-4 text-white]">
         <div class="flex list-none gap-5 text-white">
@@ -88,15 +88,15 @@
         
       </section>
       <!-- Text Over the Sliders  -->
-      <div class="z-40 absolute -mt-96 min-w-full flex text-center justify-center">
+      <div class="z-40 absolute -mt-44 lg:-mt-96 min-w-full flex text-center justify-center">
        <div>
-        <h1 class="text-5xl font-extrabold text-white"> Exotic tastes at your <br> doorstep </h1>
-        <p class="text-white my-5"> We supply highly quality organic products </p>
+        <h1 class="text-lg md:text-4xl font-semibold lg:font-extrabold text-white"> Exotic tastes at your <br> doorstep </h1>
+        <p class="text-white my-2 lg:my-5"> We supply highly quality organic products </p>
         <button class="btn btn-primary bg-[#F85559] border-0 text-white"> Shop Now </button>
        </div>
       </div>
       <!-- 5 Fruits in Row  -->
-      <div class="flex justify-center items-center bg-white shadow-md gap-16 mx-24 -mt-28 py-8 px-10 z-40 absolute">
+      <div class="flex justify-center bg-white shadow-md gap-16 mx-24 -mt-28 py-8 px-10 z-40 absolute hidden md:flex">
         <div class="items-center">
           <img src="./images/fruit1.png" alt="">
           <p class="text-xl">Grape</p>
@@ -120,13 +120,13 @@
       </div>
     </header>
 
-    <main class="mx-10">
+    <main class="mx-auto container">
       <!-- Deal of the day  -->
       <section class=" py-10 mt-24">
-        <div class="flex justify-between items-center my-8">
+        <div class="grid grid-cols-1 md:flex justify-between items-center my-8">
           <div>
             <h1 class="text-3xl font-bold my-6">Deal of the day</h1>
-            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+            <p class="min-w-fit">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
           <div>
             <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
@@ -408,7 +408,7 @@
             <div class=""> 
               <h1 class="mb-5 text-5xl font-bold text-white">Meet the team section</h1>
               <p class="mb-8 text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-              <div class="flex gap-8 items-center justify-around text-white mt-8">
+              <div class="flex flex-col md:flex-row gap-8 items-center justify-around text-white mt-8">
                 <!-- Expert-1  -->
                 <div class="items-center justify-center">
                   <img width="100px" src="./images/member1.png" alt="">
@@ -464,10 +464,10 @@
       <section class="items-center my-24">
         <h1 class="text-4xl font-extrabold text-center mb-3 mt-10">Why Choose Us</h1>
       <p class="mb-6 text-center text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-      <div class="flex items-center gap-6">
-        <div>
+      <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-6">
+        <div class="grid grid-rows-1 md:grid-rows-3">
           <!-- left column 1 -->
-          <div class="flex items-center mb-4 gap-4">
+          <div class="flex flex-col md:flex-row items-center mb-4 gap-4">
             <img class="w-1/12 bg-gray-300 rounded-full p-2" src="./images/icons/group.svg" alt="">
             <div>
               <h2 class="text-xl font-extrabold mb-2">Dedicated Team</h2>
@@ -476,7 +476,7 @@
             </div>
           </div>
           <!-- left column 2 -->
-          <div class="flex items-center my-4 gap-4">
+          <div class="flex flex-col md:flex-row items-center my-4 gap-4">
             <img class="w-1/12 bg-gray-300 rounded-full p-2" src="./images/icons/heart.svg" alt="">
             <div>
               <h2 class="text-xl font-extrabold mb-2">Fresh is Best</h2>
@@ -485,7 +485,7 @@
             </div>
           </div>
           <!-- left column 3 -->
-          <div class="flex items-center my-4 gap-4">
+          <div class="flex flex-col md:flex-row items-center my-4 gap-4">
             <img class="w-1/12 bg-gray-300 rounded-full p-2" src="./images/icons/gift-solid.svg" alt="">
             <div>
               <h2 class="text-xl font-extrabold mb-2">Gift Certificates</h2>
@@ -498,10 +498,9 @@
         <div>
           <img src="./images/whychoose1.png" alt="">
         </div>
-        <div>
+        <div class="grid grid-rows-1 md:grid-rows-3">
             <!-- Right column 1 -->
-            <div class="flex items-center mb-4 gap-4">
-              
+            <div class="flex flex-col-reverse md:flex-row items-center mb-4 gap-4">              
               <div>
                 <h2 class="text-xl font-extrabold mb-2 text-right">Integrated Supplier</h2>
                 <hr>
@@ -510,8 +509,7 @@
               <img class="w-1/12 bg-gray-300 rounded-full p-2" src="./images/icons/apple-whole-solid.svg" alt="">
             </div>
             <!-- Right column 2 -->
-            <div class="flex items-center my-4 gap-4">
-              
+            <div class="flex flex-col-reverse md:flex-row items-center my-4 gap-4">              
               <div>
                 <h2 class="text-xl font-extrabold mb-2 text-right">Sustainable Practice</h2>
                 <hr>
@@ -520,8 +518,7 @@
               <img class="w-1/12 bg-gray-300 rounded-full p-2" src="./images/icons/hand-fist-solid.svg" alt="">
             </div>
             <!-- Right column 3 -->
-            <div class="flex items-center my-4 gap-4">
-              
+            <div class="flex flex-col-reverse md:flex-row items-center my-4 gap-4"> 
               <div>
                 <h2 class="text-xl font-extrabold mb-2 text-right">The Benefits Only</h2>
                 <hr>
@@ -534,12 +531,12 @@
       </div>
       </section>
     </main>
-    <footer class="bg-[#121212] my-8 py-10">
+    <footer class="bg-[#121212] my-8 py-10 container mx-auto">
       <div class="flex justify-center items-center gap-4 my-6">
         <img width="40px" src="./images/logo.png" alt="">
         <h1 class="text-3xl font-bold text-white">Fruit Burst</h1>
       </div>
-      <div class="text-white list-none flex justify-center gap-6 my-8"> 
+      <div class="text-white list-none flex flex-col md:flex-row justify-center gap-6 my-8"> 
         <li>Home</li>
         <li>About Us</li>
         <li>Shop</li>
